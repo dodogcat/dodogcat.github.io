@@ -7,7 +7,14 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% for link in site.data.navigation.main %}
+          <!-- 언어에 따른 상단 메뉴 분기 -->
+          {% if page.lang == 'en' %}
+            {% assign nav_links = site.data.navigation.main_en %}
+          {% else %}
+            {% assign nav_links = site.data.navigation.main %}
+          {% endif %}
+
+          {% for link in nav_links %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
@@ -15,6 +22,20 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
+
+          <!-- KO | EN 직관적 토글 UI -->
+          <li id="lang-toggle" class="masthead__menu-item persist tail" style="margin-left: 15px;">
+            {% if page.lang == 'en' %}
+              <a href="{{ base_path }}{{ page.translation_url | default: '/' }}" onclick="localStorage.setItem('site_lang', 'ko');" style="opacity: 0.5;">KO</a>
+              <span style="opacity: 0.5;">|</span>
+              <span style="font-weight: bold; cursor: default;">EN</span>
+            {% else %}
+              <span style="font-weight: bold; cursor: default;">KO</span>
+              <span style="opacity: 0.5;">|</span>
+              <a href="{{ base_path }}{{ page.translation_url | default: '/en/' }}" onclick="localStorage.setItem('site_lang', 'en');" style="opacity: 0.5;">EN</a>
+            {% endif %}
+          </li>
+
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>

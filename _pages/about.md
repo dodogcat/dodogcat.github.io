@@ -1,6 +1,8 @@
 ---
 permalink: /
 title: "About Me"
+lang: "ko"
+translation_url: "/en/"
 author_profile: true
 redirect_from: 
   - /about/

@@ -1,22 +1,20 @@
 ---
 layout: archive
-title: "CV"
-permalink: /cv/
-lang: "ko"
-translation_url: "/en/cv/"
+title: "CV (EN)"
+permalink: /en/cv/
+lang: "en"
+translation_url: "/cv/"
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
 {% include base_path %}
 
 ## Education
-* 세종대학교 일반대학원 석사과정 / 컴퓨터그래픽스 및 시뮬레이션 연구
+* Master's Degree in Computer Graphics and Simulation, Sejong University
 
 ## Skills
 * **Simulation / Programming**: Taichi, Python, C++, C#
-* **Tools**: Git, Notion, Unity, Unreal Engine, Blender
+* **Tools**: Git, Unity, Unreal Engine, Blender
 
 ## Publications
 <ul>{% for post in site.publications reversed %}
