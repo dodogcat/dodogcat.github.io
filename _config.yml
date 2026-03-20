@@ -24,11 +24,11 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "장윤석"
-  pronouns         : ""
+  pronouns         : 
   bio              : "Physics-based Simulation / Modeling & Simulation"
   location         : "Seoul, South Korea"
-  employer         : ""
-  uri              : ""
+  employer         : 
+  uri              : 
   email            : "ttttwww10@naver.com" 
 
   # Academic websites
@@ -50,7 +50,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : 
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
