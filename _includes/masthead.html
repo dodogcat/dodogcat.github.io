@@ -24,7 +24,7 @@
           {% endfor %}
 
           <!-- KO | EN 직관적 토글 UI -->
-          <li id="lang-toggle" class="masthead__menu-item persist tail" style="margin-left: 15px;">
+          <li id="lang-toggle" class="masthead__menu-item persist tail" style="margin-left: 15px; white-space: nowrap;">
             {% if page.lang == 'en' %}
               <a href="{{ base_path }}{{ page.translation_url | default: '/' }}" onclick="localStorage.setItem('site_lang', 'ko');" style="opacity: 0.5;">KO</a>
               <span style="opacity: 0.5;">|</span>
