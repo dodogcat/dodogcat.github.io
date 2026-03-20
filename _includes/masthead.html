@@ -24,15 +24,15 @@
           {% endfor %}
 
           <!-- KO | EN 직관적 토글 UI -->
-          <li id="lang-toggle" class="masthead__menu-item persist tail" style="margin-left: 15px; white-space: nowrap; display: inline-flex; align-items: center; gap: 4px;">
+          <li id="lang-toggle" class="masthead__menu-item persist tail">
             {% if page.lang == 'en' %}
-              <a href="{{ base_path }}{{ page.translation_url | default: '/' }}" onclick="localStorage.setItem('site_lang', 'ko');" style="opacity: 0.5; padding: 0;">KO</a>
-              <span style="opacity: 0.5; padding: 0;">|</span>
-              <span style="font-weight: bold; cursor: default; padding: 0;">EN</span>
+              <a href="{{ base_path }}{{ page.translation_url | default: '/' }}" onclick="localStorage.setItem('site_lang', 'ko');" title="한국어로 보기">
+                <span style="font-weight: normal; opacity: 0.6;">KO</span>&nbsp;|&nbsp;<span style="font-weight: bold;">EN</span>
+              </a>
             {% else %}
-              <span style="font-weight: bold; cursor: default; padding: 0;">KO</span>
-              <span style="opacity: 0.5; padding: 0;">|</span>
-              <a href="{{ base_path }}{{ page.translation_url | default: '/en/' }}" onclick="localStorage.setItem('site_lang', 'en');" style="opacity: 0.5; padding: 0;">EN</a>
+              <a href="{{ base_path }}{{ page.translation_url | default: '/en/' }}" onclick="localStorage.setItem('site_lang', 'en');" title="View in English">
+                <span style="font-weight: bold;">KO</span>&nbsp;|&nbsp;<span style="font-weight: normal; opacity: 0.6;">EN</span>
+              </a>
             {% endif %}
           </li>
 
