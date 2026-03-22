@@ -11,7 +11,11 @@
     <div class="cv-contact">
       {% if cv.basics.email %}
       <div class="cv-contact-item">
-        <i class="fas fa-envelope"></i> {{ cv.basics.email }}
+        {% if page.lang == 'en' %}
+        <i class="fas fa-envelope"></i> ttttwww10@gmail.com
+        {% else %}
+        <i class="fas fa-envelope"></i> ttttwww10@naver.com
+        {% endif %}
       </div>
       {% endif %}
       
