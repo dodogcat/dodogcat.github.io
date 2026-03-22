@@ -1,5 +1,5 @@
 ---
-title: "Visual Simulation of Granular Segregation Using MPM"
+title: "과립체 분리 거동 시뮬레이션 연구"
 excerpt: "MPM 기반 과립체 분리 거동 시뮬레이션 연구<br/><img src='/images/notion1.jpg'>"
 collection: portfolio
 ---
