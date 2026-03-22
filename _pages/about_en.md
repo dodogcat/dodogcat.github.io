@@ -23,6 +23,10 @@ author_profile: true
 
 ## Summary
 
+**Key Achievements:**
+* Achieved **26% reduction** in simulation target time and **13% improvement** in kernel performance (MPM Granular Simulation Research).
+* Optimized on-device AI model (ONNX/YOLO) inference pipeline based on profiling-driven bottleneck diagnosis.
+
 I excel at transforming complex physical phenomena into computable models and ensuring reliable results through rigorous iterative validation. During my Master's program, I researched granular simulation based on the Material Point Method (MPM), handling physics-based modeling, numerical validation, bottleneck analysis, and performance optimization simultaneously. Rather than simply implementing a model, I consistently verified the stability and reproducibility of calculation results by performing iterative executions under identical conditions, checking for divergence, verifying interpolation weight sums, and conducting sensitivity analysis across parameter variations.
 
 Furthermore, I primarily used Python and Taichi for simulation implementation and result analysis. In a Unity-based on-device AI optimization project, I utilized profiling to isolate actual bottleneck causes and designed performance improvement strategies. Through diverse projects, I have cultivated skills in modeling, validation, performance analysis, and structuring collaborative environments.

@@ -4,6 +4,10 @@ excerpt: "Unreal Engine 5 Niagara GPU MPM Implementation & Other Prototypes<br/>
 collection: portfolio
 ---
 
+**Period**: 2022 ~ 2024 (Various)  
+**Role**: 기획, 엔진/프레임워크 분석, 프로토타입 구현  
+**Tech Stack**: Unreal Engine 5 (Niagara, Blueprint), XR (Unity, Meta Quest), C++, C#  
+
 ## Unreal Engine 5 Niagara GPU MPM Implementation
 - Niagara Grid 3D Collection과 사용자 정의 변수 흐름을 분석하며 GPU 기반 시뮬레이션 구현 구조를 학습했습니다.
 - 엔진 기반 시뮬레이션 환경에서 데이터 흐름과 파이프라인을 이해한 경험입니다.

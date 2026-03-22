@@ -10,3 +10,12 @@ venue: '석사학위논문'
 
 **MPM을 사용한 과립체 분리 시뮬레이션 시각화**  
 - 석사학위논문
+
+<br>
+<a href="#" class="btn btn--info">PDF Download</a>
+<a href="#" class="btn btn--info">Presentation Slides</a>
+
+---
+
+### Abstract
+*(논문 초록 혹은 핵심 요약을 기입해 주세요)*
