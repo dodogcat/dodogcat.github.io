@@ -7,7 +7,8 @@ excerpt: "KCGS 2025 포스터 발표"
 date: 2025-07-01
 venue: "KCGS 2025 포스터"
 citation: "한국컴퓨터그래픽스학회(KCGS) 2025 포스터 발표"
-paperurl: "https://cg-korea.org/index.php?page=view&pg=1&idx=206&hCode=BOARD&bo_idx=2&sfl=&stx="
+paperurl: "https://cg-korea.org/NFUpload/nfupload_down.php?tmp_name=982709761_7f564f94.pdf&name=%ED%95%9C%EA%B5%AD%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4%ED%95%99%ED%9A%8C+2025+%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C+%ED%94%84%EB%A1%9C%EC%8B%9C%EB%94%A9%28PDF%29.pdf"
+hide_default_links: true
 ---
 
 고가의 장비가 필요하거나 위험성이 따르는 실제 물리 실험을 대체하기 위해, **Apple Vision Pro**를 활용한 XR 기반 물리 교육 시뮬레이션 콘텐츠를 개발한 포스터 발표입니다.

@@ -7,7 +7,8 @@ excerpt: "KCGS 2023 포스터 발표"
 date: 2023-07-01
 venue: "KCGS 2023 포스터"
 citation: "한국컴퓨터그래픽스학회(KCGS) 2023 포스터 발표"
-paperurl: "https://cg-korea.org/index.php?page=view&pg=1&idx=128&hCode=BOARD&bo_idx=2&sfl=&stx="
+paperurl: "https://drive.google.com/file/d/1f-kVkx4xPY5HgGW6a1viBiF_NQdB9jxE/view"
+hide_default_links: true
 ---
 
 실내 환경에서 발생하는 다양한 종류의 불을 인식하고 분류하기 위해, 경량화된 **YOLOv3-tiny** 모델을 전이학습하여 모바일 애플리케이션 형태로 구현한 포스터 발표입니다.
