@@ -33,7 +33,6 @@ hide_default_links: true
 - 매개변수 변화에 따른 거동 분석 및 비교
 
 [학위논문 페이지 바로가기](http://sejong.dcollection.net/common/orgView/200000952981){: .btn .btn--primary}
-[대표 영상 보기](/files/publications/master-thesis.mp4){: .btn .btn--primary}
 
 <video class="publication-video" controls preload="metadata">
   <source src="/files/publications/master-thesis.mp4" type="video/mp4">
