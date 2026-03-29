@@ -20,7 +20,7 @@ In graphics and game-engine contexts, my strength is physics-based simulation an
 
 ### Selected Highlights
 
-- **27s -> 20s**: reduced representative simulation runtime in repeated experiment workflows
+- **Validation Efficiency**: improved repeated experiment efficiency and stability through model and computation-flow refinement
 - **13% Kernel Speedup**: improved a bottleneck kernel through atomic reduction, kernel fusion, and memory hierarchy optimization
 - **On-device AI Profiling**: identified NMS bottlenecks in YOLOv8 / OWL-ViT deployment pipelines
 - **Engine Transfer**: ongoing MPM transfer into UE5 Niagara HLSL Custom Modules

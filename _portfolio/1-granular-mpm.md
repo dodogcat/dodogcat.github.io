@@ -1,6 +1,6 @@
 ---
 title: "MPM Physics Simulation"
-excerpt: "27s -> 20s runtime reduction and 13% kernel speedup through MPM simulator optimization, validation, and engine transfer planning.<br/><img src='/images/notion1.jpg'>"
+excerpt: "Validation-oriented MPM simulator refinement and 13% kernel speedup through optimization, reproducibility work, and engine transfer planning.<br/><img src='/images/notion1.jpg'>"
 collection: portfolio
 category: physics
 tags:
@@ -18,7 +18,7 @@ tags:
 **Code**: Private Repository - Available upon request
 
 ## Headline
-Built and optimized an MPM-based real-time simulation pipeline for granular material behavior, reducing representative experiment runtime from **27 seconds to 20 seconds** and improving a major GPU kernel by **13%** while strengthening reproducibility and numerical stability.
+Built and optimized an MPM-based real-time simulation pipeline for granular material behavior, improving repeated experiment efficiency and a major GPU kernel by **13%** while strengthening reproducibility and numerical stability.
 
 ## Problem
 The project started as a physics simulation research task, but the engineering challenge was broader: build a simulator that could model complex particle behavior, remain numerically stable under difficult conditions, and be credible enough for repeated validation and future real-time engine integration.
@@ -39,7 +39,7 @@ For the convergence improvement work, I framed the contribution as **physical mo
 For stability, I applied a **Plastic Gate**-based control strategy to suppress numerical explosion and added routines to repeatedly verify that the same experimental condition produced physically plausible behavior.
 
 ## Result
-- Reduced representative simulation completion time from **27s to 20s**.
+- Improved repeated experiment efficiency through model and computation-flow refinement.
 - Improved a bottleneck GPU kernel by **13%** through atomic reduction, kernel fusion, and memory hierarchy optimization.
 - Improved the simulator's reliability by adding reproducibility and instability-detection routines rather than relying on manual parameter tuning.
 - Prepared the research output for broader reuse in real-time environments and ongoing engine-side transfer.

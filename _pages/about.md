@@ -9,8 +9,6 @@ redirect_from:
   - /about.html
 ---
 
-## 장윤석
-
 실시간 시뮬레이션, 수치 검증, 성능 프로파일링을 중심으로 작업하는 엔지니어입니다.  
 그래픽스와 게임 엔진 문맥에서는 물리 기반 시뮬레이션과 런타임 최적화에 강점이 있고, 산업 시뮬레이션과 디지털 트윈 문맥에서는 복잡한 동적 시스템을 구현하고 검증하며 신뢰 가능한 형태로 다듬는 일에 강점이 있습니다.
 
@@ -23,7 +21,7 @@ redirect_from:
 
 ### Selected Highlights
 
-- **27s -> 20s**: 대표 실험의 목표 도달 시간을 단축하며 시뮬레이터 반복 실험 효율 개선
+- **Validation Efficiency**: 물리 모델 및 계산 흐름 고도화를 통해 반복 실험 효율과 안정성 개선
 - **13% Kernel Speedup**: Atomic 감소, kernel fusion, memory hierarchy 최적화로 병목 커널 개선
 - **On-device AI Profiling**: YOLOv8, OWL-ViT 기반 추론 파이프라인에서 NMS 병목 구간 식별
 - **Engine Transfer**: UE5 Niagara HLSL Custom Module 기반 MPM 이식 진행

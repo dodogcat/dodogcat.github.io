@@ -41,6 +41,9 @@ redirect_from:
 
 <ul>
 {% for post in site.publications reversed %}
+  {% if post.hidden %}
+    {% continue %}
+  {% endif %}
   {% include archive-single-cv.html %}
 {% endfor %}
 </ul>

@@ -26,6 +26,9 @@ author_profile: true
 
 ## Publications
 <ul>{% for post in site.publications reversed %}
+  {% if post.hidden %}
+    {% continue %}
+  {% endif %}
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 
