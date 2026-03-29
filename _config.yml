@@ -250,7 +250,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   - scope:
       path: ""
@@ -258,7 +258,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comment: true
   - scope:
       path: ""
