@@ -1,77 +1,50 @@
 ---
 permalink: /en/
-title: "About Me (EN)"
+title: "About"
 lang: "en"
 translation_url: "/"
 author_profile: true
 ---
 
-# Yunseok Jang | Physics-based Simulation / Modeling & Simulation Portfolio
+## Yunseok Jang
 
-> Aspiring R&D engineer aiming to formulate complex phenomena into computable models and implement reliable results based on experiences in physics-based simulation, numerical validation, and performance analysis.
+I am an engineer focused on real-time simulation, numerical validation, and performance profiling.  
+In graphics and game-engine contexts, my strength is physics-based simulation and runtime optimization. In industrial simulation and digital twin contexts, my strength is building systems that are implemented, validated, and reliable enough to be trusted repeatedly.
 
----
+### Focus
 
-## About
+- **Physics-based Simulation**: MPM simulator design and GPU kernel implementation
+- **Performance & Reliability**: bottleneck analysis, numerical stability, reproducibility
+- **Real-time System Engineering**: Unity, Unreal Engine, and on-device inference integration
+- **Industrial Simulation Readiness**: validation-oriented pipelines, coordinate alignment, external-system integration
 
-- **Name**: Yunseok Jang
-- **Field**: Physics-based Simulation, Modeling & Simulation, GPU/Algorithm Optimization
-- **Education**: Master's degree student in Computer Graphics & Simulation, Sejong University
-- **Keywords**: MPM, Granular Simulation, Numerical Validation, Taichi, Python, Performance Profiling
+### Selected Highlights
 
----
+- **27s -> 20s**: reduced representative simulation runtime in repeated experiment workflows
+- **13% Kernel Speedup**: improved a bottleneck kernel through atomic reduction, kernel fusion, and memory hierarchy optimization
+- **On-device AI Profiling**: identified NMS bottlenecks in YOLOv8 / OWL-ViT deployment pipelines
+- **Engine Transfer**: ongoing MPM transfer into UE5 Niagara HLSL Custom Modules
 
-## Summary
+### What I Work On
 
-**Key Achievements:**
-* Achieved **26% reduction** in simulation target time and **13% improvement** in kernel performance (MPM Granular Simulation Research).
-* Optimized on-device AI model (ONNX/YOLO) inference pipeline based on profiling-driven bottleneck diagnosis.
+I do not think it is enough to make a model run once. In production-facing environments, three questions matter more:
 
-I excel at transforming complex physical phenomena into computable models and ensuring reliable results through rigorous iterative validation. During my Master's program, I researched granular simulation based on the Material Point Method (MPM), handling physics-based modeling, numerical validation, bottleneck analysis, and performance optimization simultaneously. Rather than simply implementing a model, I consistently verified the stability and reproducibility of calculation results by performing iterative executions under identical conditions, checking for divergence, verifying interpolation weight sums, and conducting sensitivity analysis across parameter variations.
+1. **Does the model behave stably?**
+2. **Can the bottleneck be explained with measured evidence?**
+3. **Does the system remain usable after integration with surrounding modules?**
 
-Furthermore, I primarily used Python and Taichi for simulation implementation and result analysis. In a Unity-based on-device AI optimization project, I utilized profiling to isolate actual bottleneck causes and designed performance improvement strategies. Through diverse projects, I have cultivated skills in modeling, validation, performance analysis, and structuring collaborative environments.
+During my master's program, I worked on MPM-based granular simulation and handled physical modeling, numerical validation, and performance profiling together. In parallel, I built Unity-based vision pipelines, Quest 2 interaction systems, and CAD/FDS-linked visualization workflows, which helped me bridge the gap between algorithms and operational systems.
 
----
+### Target Roles
 
-## Why Me for Modeling & Simulation
+- Graphics / Game Engine Engineer
+- Industrial Simulation Engineer
+- Digital Twin / Validation Engineer
+- Real-time System / Technical R&D Engineer
 
-- **Modeling**: Formulated complex physical phenomena into computable forms and implemented numerical models.
-- **Validation**: Verified reliability through iterative execution, divergence checking, and sensitivity analysis.
-- **Performance Analysis**: Conducted profiling-based bottleneck analysis and performance improvement.
-- **Implementation**: Proficient in Python / Taichi, with adaptability to C++ based environments.
-- **Collaboration**: Structured goals and designed execution flows while collaborating with team members from diverse backgrounds.
+### Links
 
----
-
-## Technical Skills
-
-### Simulation / Programming
-
-- **Taichi**: Can profile kernel bottlenecks and analyze/improve causes of performance degradation during physics-based simulation implementations.
-- **Python**: Capable of simulation implementation, data processing, result analysis, post-processing automation, and open-source code debugging.
-- **C++**: Can utilize for basic implementation and at the engine/simulation learning levels.
-- **C#**: Can write scripts and implement features required for Unity project development.
-
-### Tools
-
-- **Git**: Branch-based version control, feature-unit history management, basic conflict resolution.
-- **Notion**: Structuring collaborative documents, experiment records, schedules, and project pages.
-- **Unity**: Feature-focused prototyping and relatively simple program development.
-- **Unreal Engine**: Basic usage and foundational feature implementation.
-- **Blender**: Basic editing and result verification.
-
----
-
-## Strengths
-
-### 1. Validation-Centric Simulation Competency
-My strength lies not just in producing results once, but in confirming reliable computational outcomes through iterative execution under identical conditions and sensitivity checking.
-
-### 2. Problem-Solving Approach Integrating Modeling and Implementation
-Familiar with translating theoretical exploration into actual code and computational structures, making them into implementable forms.
-
-### 3. Profiling-Based Performance Analysis
-Rather than optimizing by intuition, I measure actual bottlenecks, isolate causes, and design improvement strategies.
-
-### 4. Collaboration Structuring Ability
-Skilled in structuring roles and interfaces so team members with diverse backgrounds can move toward the same goal.
+- GitHub: [github.com/dodogcat](https://github.com/dodogcat)
+- Portfolio: [/portfolio/](/portfolio/)
+- CV: [/en/cv/](/en/cv/)
+- Email: `ttttwww10@naver.com`

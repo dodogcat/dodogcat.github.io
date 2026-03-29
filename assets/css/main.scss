@@ -41,3 +41,89 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+.portfolio-landing__lead {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #334155;
+}
+
+.portfolio-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.portfolio-highlight-card {
+  padding: 1rem 1.1rem;
+  border: 1px solid #dbe4ee;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5fb 100%);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+}
+
+.portfolio-highlight-card strong {
+  display: block;
+  margin: 0.35rem 0 0.5rem;
+  font-size: 1.35rem;
+  color: #0f172a;
+}
+
+.portfolio-highlight-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.portfolio-highlight-card__label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0f766e;
+}
+
+.archive__item {
+  padding: 1.2rem 1.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.04);
+}
+
+.archive__item-taxonomy {
+  margin: 0.35rem 0 0.85rem;
+}
+
+.archive__item-badge,
+.archive__item-tag {
+  display: inline-block;
+  margin: 0 0.4rem 0.4rem 0;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.archive__item-badge {
+  background: #dff7f2;
+  color: #0f766e;
+}
+
+.archive__item-tag {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.archive__item-cta {
+  margin-top: 0.9rem;
+  font-weight: 700;
+}
+
+.archive__item-cta a {
+  color: #0f766e;
+}

@@ -7,8 +7,55 @@ author_profile: true
 
 {% include base_path %}
 
+<div class="portfolio-landing">
+  <p class="portfolio-landing__lead">
+    Physics-based simulation, real-time system engineering, and validation-oriented software projects.
+    The portfolio is organized to highlight measurable outcomes, profiling discipline, and cross-domain applicability.
+  </p>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+  <div class="portfolio-highlight-grid">
+    <div class="portfolio-highlight-card">
+      <span class="portfolio-highlight-card__label">Performance</span>
+      <strong>27s -> 20s</strong>
+      <p>Representative simulation runtime reduction through model and kernel refinement.</p>
+    </div>
+    <div class="portfolio-highlight-card">
+      <span class="portfolio-highlight-card__label">Kernel Optimization</span>
+      <strong>13% speedup</strong>
+      <p>Atomic reduction, kernel fusion, and memory hierarchy-aware optimization.</p>
+    </div>
+    <div class="portfolio-highlight-card">
+      <span class="portfolio-highlight-card__label">Deployment</span>
+      <strong>Edge + Engine</strong>
+      <p>Unity runtime inference, UE5 Niagara transfer, and system integration under real constraints.</p>
+    </div>
+  </div>
 
+  <h2>Physics Simulation</h2>
+  {% for post in site.portfolio %}
+    {% if post.category == "physics" %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+
+  <h2>AI & Computer Vision</h2>
+  {% for post in site.portfolio %}
+    {% if post.category == "ai" %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+
+  <h2>Software & Interaction</h2>
+  {% for post in site.portfolio %}
+    {% if post.category == "software" %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+
+  <h2>Applied Simulation Integration</h2>
+  {% for post in site.portfolio %}
+    {% if post.category == "simulation" %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+</div>

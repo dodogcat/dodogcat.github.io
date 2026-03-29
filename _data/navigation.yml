@@ -11,5 +11,7 @@ main:
 main_en:
   - title: "Home"
     url: /en/
+  - title: "Portfolio"
+    url: /portfolio/
   - title: "CV"
     url: /en/cv/
