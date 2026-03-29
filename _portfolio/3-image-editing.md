@@ -1,30 +1,57 @@
 ---
-title: "AI-based Image Editing Pipeline Project"
-excerpt: "SAM / 3D Body / 외부 API를 연결한 3D 자세 제어 및 이미지 생성 파이프라인<br/><img src='/images/notion6.png'>"
+title: "Software Engineering & VR Interaction"
+excerpt: "Designed VR interaction on Quest 2, led team delivery, and translated model outputs into system-level workflows across interactive software projects.<br/><img src='/images/notion6.png'>"
 collection: portfolio
+category: software
+tags:
+  - VR
+  - Quest2
+  - Unity
+  - System Integration
+  - Backend Architecture
+  - Team Leadership
 ---
 
-**Period**: 2025.09 ~ 2025.12  
-**Role**: 팀장, 구조 설계, 환경 세팅, 역할 분담 조율  
-**Team Size**: 3명  
-**Tech Stack**: Python, ComfyUI, SAM / 3D Body / External Image API  
+**Period**: 2020.06 - 2025.12  
+**Role**: Technical planning, interaction design, system integration, team coordination  
+**Tech Stack**: Unity, C#, Meta Quest 2, Python, API integration, system pipeline design  
+**Code**: Private Repository - Available upon request
 
-## Overview
-원본 이미지에서 사람을 추출하고, 3D body 기반으로 자세를 제어한 뒤, 해당 자세를 가이드로 활용해 새로운 이미지를 생성하는 파이프라인을 구축한 프로젝트입니다.
+## Headline
+Led and delivered interactive software projects by organizing complex data and control flows into systems that teams could actually integrate, debug, and ship.
 
-## What I Did
-- 프로젝트 전체 목표와 구현 범위 정의
-- 팀원별 이해 수준을 고려한 협업 구조 설계
-- 실행 가능한 기본 환경과 코드 세팅 정리
-- AI 담당 / 개발 담당 역할 분리 및 인터페이스 기준 정리
-- 이론 중심 회의를 구현 중심 회의로 전환
+## Problem
+Several of my non-research projects shared the same engineering difficulty: different modules worked in isolation, but the real challenge was turning them into a stable end-to-end product.
 
-## Key Results
-- 회의 시간 2시간 → 30분 수준으로 단축
-- 사람 추출, 자세 제어, 이미지 생성이 연결된 프로토타입 제출
-- 서로 다른 배경의 팀원이 독립적으로 작업 가능한 구조 정착
+That included:
 
-## Relevance
-협업 과정에서 단순 설명이 아니라 목표, 역할, 인터페이스를 구조화한 경험은 복합적인 연구개발 환경에서 필요한 협업 및 실행 관리 역량을 보여줍니다.
+- designing usable **VR interaction** on Quest 2,
+- connecting AI outputs to actual application behavior,
+- and translating technical constraints into terms that non-specialist teammates could use during integration.
 
-![Project 3 Result](/images/notion7.png)
+## Solution
+In the **Recycle Master** project, I took responsibility for **Quest 2 integration** and VR interaction design, covering input flow, object manipulation, and interaction UX in a real-time Unity environment.
+
+In applied AI and systems projects, I also focused on making module boundaries explicit:
+
+- defined input/output timing and data formats for components that had to be integrated into a main application,
+- reorganized explanations around system resource usage rather than model internals,
+- helped teams make practical technical decisions when an accurate module was too heavy for the surrounding application,
+- and structured execution steps so each contributor could work independently without losing overall coherence.
+
+This style of work also appeared in team projects where I acted as a PM or technical coordinator, especially when the team needed a shared language for schedules, issue tracking, and demo-centered delivery.
+
+## Result
+- Delivered VR interaction features on **Meta Quest 2** that were usable in a real-time application context.
+- Improved collaboration by reframing technical issues as **system integration metrics** such as timing, input/output contracts, and expected resource load.
+- Built repeatable experience in turning prototypes into integrated workflows rather than disconnected modules.
+- Strengthened my ability to lead technical decisions in mixed teams spanning AI, client runtime, and application logic.
+
+## Why It Matters
+This project set shows engineering value that crosses industry boundaries:
+
+- For **graphics / game engine** roles: interaction design, runtime integration, and real-time application architecture.
+- For **industrial simulation / digital twin** roles: structuring multi-module systems, clarifying interfaces, and reducing integration risk in complex software environments.
+
+![Interactive pipeline concept](/images/notion7.png)
+*Representative interactive software workflow spanning runtime logic, external modules, and delivery coordination.*

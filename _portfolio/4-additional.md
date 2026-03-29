@@ -1,19 +1,44 @@
 ---
-title: "Additional Projects"
-excerpt: "Unreal Engine 5 Niagara GPU MPM Implementation & Other Prototypes<br/><img src='/images/notion8.png'>"
+title: "Applied Simulation & System Integration"
+excerpt: "Connected CAD, external simulation outputs, and vision-driven coordinates into coherent 3D environments for validation-oriented workflows.<br/><img src='/images/notion8.png'>"
 collection: portfolio
+category: simulation
+tags:
+  - Unreal
+  - CAD
+  - FDS
+  - Coordinate Alignment
+  - Visualization
+  - System Validation
 ---
 
-**Period**: 2022 ~ 2024 (Various)  
-**Role**: 기획, 엔진/프레임워크 분석, 프로토타입 구현  
-**Tech Stack**: Unreal Engine 5 (Niagara, Blueprint), XR (Unity, Meta Quest), C++, C#  
+**Period**: 2023.09 - 2025.12  
+**Role**: Spatial data integration, visualization pipeline setup, coordinate alignment  
+**Tech Stack**: Unreal Engine, CAD-based scene construction, external simulator linkage, computer vision output mapping  
+**Code**: Private Repository - Available upon request
 
-## Unreal Engine 5 Niagara GPU MPM Implementation
-- Niagara Grid 3D Collection과 사용자 정의 변수 흐름을 분석하며 GPU 기반 시뮬레이션 구현 구조를 학습했습니다.
-- 엔진 기반 시뮬레이션 환경에서 데이터 흐름과 파이프라인을 이해한 경험입니다.
+## Headline
+Worked on simulation-adjacent system integration problems where the main challenge was not a single algorithm, but making heterogeneous data sources agree inside one interpretable 3D environment.
 
-## Fire Detection / XR / Other Prototypes
-- 다양한 프로젝트에서 프로토타입 구현, 기능 연결, 실험 환경 구성 경험을 쌓았습니다.
-- 직무 직접 연관성은 상대적으로 낮지만, 구현 폭과 적응력을 보여주는 보조 경험입니다.
+## Problem
+Projects involving building-scale simulation and visualization often fail at the interface boundaries: coordinate systems do not match, external simulator outputs are hard to trust in context, and small alignment errors propagate into misleading results.
 
-![Additional Projects](/images/notion8.png)
+## Solution
+I worked on workflows that connected:
+
+- **CAD-based spatial layouts**
+- external simulation outputs such as **FDS**
+- and camera or object-recognition results that needed to be mapped into 3D coordinates
+
+The technical focus was on building a pipeline where these pieces could be checked together rather than treated as separate artifacts.
+
+## Result
+- Built practical experience in handling **coordinate alignment** and external-tool integration issues.
+- Learned to treat visualization as a validation surface, not just a presentation layer.
+- Strengthened my ability to connect real-world structured data with simulation and rendering environments.
+
+## Why It Matters
+This supporting project is especially relevant to **industrial simulation / digital twin** roles because it deals directly with spatial data consistency, simulator linkage, and explainable visualization. At the same time, it remains applicable to **graphics / engine** work because it uses real-time 3D environments as the integration layer.
+
+![Applied simulation integration](/images/notion8.png)
+*Applied simulation and visualization work focused on spatial consistency and external-system integration.*

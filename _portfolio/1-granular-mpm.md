@@ -1,34 +1,62 @@
 ---
-title: "과립체 분리 거동 시뮬레이션 연구"
-excerpt: "MPM 기반 과립체 분리 거동 시뮬레이션 연구<br/><img src='/images/notion1.jpg'>"
+title: "MPM Physics Simulation"
+excerpt: "27s -> 20s runtime reduction and 13% kernel speedup through MPM simulator optimization, validation, and engine transfer planning.<br/><img src='/images/notion1.jpg'>"
 collection: portfolio
+category: physics
+tags:
+  - MPM
+  - CUDA
+  - Taichi
+  - Numerical Analysis
+  - Real-time System
+  - Digital Twin
 ---
 
-**Period**: 2024.03 ~ 2026.02  
-**Role**: 연구 설계, 시뮬레이터 구현, 검증, 성능 개선  
-**Tech Stack**: Taichi(CUDA Backend), Python, MPM, Drucker-Prager, Numerical Validation  
+**Period**: 2024.03 - Present  
+**Role**: Simulator design, GPU kernel implementation, numerical validation, performance profiling  
+**Tech Stack**: Taichi (CUDA Backend), Python, MPM, HLSL, Unreal Engine 5 Niagara  
+**Code**: Private Repository - Available upon request
 
-## Overview
-브라질넛 효과와 과립체 분리 거동을 MPM 기반으로 재현하기 위한 시뮬레이션 연구를 수행했습니다. 기존 그래픽스 분야에서 직접적인 선행 연구를 찾기 어려웠기 때문에, 관련 문헌을 확장 탐색해 혼합물 이론 기반 접근을 기존 MPM 프레임워크와 연결하는 방식으로 문제를 재정의했습니다.
+## Headline
+Built and optimized an MPM-based real-time simulation pipeline for granular material behavior, reducing representative experiment runtime from **27 seconds to 20 seconds** and improving a major GPU kernel by **13%** while strengthening reproducibility and numerical stability.
 
-## What I Did
-- MPM 기반 과립체 시뮬레이터 설계 및 구현
-- Drucker-Prager 계열 탄소성 모델과 관련 응력 갱신 과정 구현
-- 분리 현상을 유도하기 위한 보조 모델 설계 및 적용
-- 발산 여부, 보간 가중치 합, 파라미터 변화에 따른 민감도 지속 점검
-- 반복 실행 기반으로 결과 재현성과 안정성 검증
-- 병목 분석 및 계산 구조 개선을 통한 성능 향상
+## Problem
+The project started as a physics simulation research task, but the engineering challenge was broader: build a simulator that could model complex particle behavior, remain numerically stable under difficult conditions, and be credible enough for repeated validation and future real-time engine integration.
 
-## Key Results
-- 목표 상태 도달 시간 **27초 → 20초**, 약 **26% 단축**
-- 커널 성능 약 **13% 개선**
-- 연구 결과 **EG 2026 포스터 심사 중**
+This made the work relevant not only to graphics and game engines, but also to industrial simulation and digital twin environments where reliability, repeatability, and profiling discipline matter as much as raw speed.
 
-## Relevance
-복잡한 물리 현상을 모델링하고, 반복 검증을 통해 신뢰성 있는 결과를 확보한 경험은 모델링 및 시뮬레이션, 성능분석, 검증이 중요한 연구개발 직무와 연결됩니다.
+## Solution
+I implemented the MPM simulator on top of **Taichi with the CUDA backend**, focusing on the high-cost data transfer stages between particles and grids.
 
-![(좌) 수직 진동 시작 전 (우) 입자 분리 완료 이후](/images/notion2.png)
-*(좌) 수직 진동 시작 전 (우) 입자 분리 완료 이후*
+- Designed and implemented core **P2G/G2P** and stress-update kernels for GPU execution.
+- Reduced contention by minimizing unnecessary **atomic operations** in heavily accessed update paths.
+- Applied **kernel fusion** where launch overhead and memory traffic could be removed safely.
+- Reorganized **P2G/G2P memory access patterns** to better fit the GPU memory hierarchy and reduce avoidable stalls.
+- Established a reproducibility-oriented validation routine with kernel-level checks for unstable states.
 
-![PAF의 파라미터 별 목표 달성 시간 비교](/images/notion3.png)
-*PAF의 파라미터 별 목표 달성 시간 비교*
+For the convergence improvement work, I framed the contribution as **physical model formulation and algorithm refinement** and used it to improve low-shear convergence behavior. I intentionally omit the detailed formulation here due to research confidentiality.
+
+For stability, I applied a **Plastic Gate**-based control strategy to suppress numerical explosion and added routines to repeatedly verify that the same experimental condition produced physically plausible behavior.
+
+## Result
+- Reduced representative simulation completion time from **27s to 20s**.
+- Improved a bottleneck GPU kernel by **13%** through atomic reduction, kernel fusion, and memory hierarchy optimization.
+- Improved the simulator's reliability by adding reproducibility and instability-detection routines rather than relying on manual parameter tuning.
+- Prepared the research output for broader reuse in real-time environments and ongoing engine-side transfer.
+
+## Engine Transfer
+The simulator is also being translated into **UE5 Niagara HLSL Custom Modules**. This ongoing work focuses on restructuring the simulation flow so that particle growth, branching cost, and memory pressure can be profiled inside a real-time engine context.
+
+That transfer work matters because it turns a research simulator into a form closer to production graphics and interactive simulation systems.
+
+## Why It Matters
+This project demonstrates a mix of capabilities that transfer across both target domains:
+
+- For **graphics / game engine** roles: GPU-side simulation design, real-time constraints, and engine integration thinking.
+- For **industrial simulation / digital twin** roles: numerical analysis, repeatable validation, and performance optimization on large-scale dynamic systems.
+
+![Granular segregation simulation](/images/notion2.png)
+*Granular segregation behavior rendered from the MPM simulation pipeline.*
+
+![Runtime comparison](/images/notion3.png)
+*Representative runtime comparison after model and kernel optimization.*

@@ -1,28 +1,55 @@
 ---
-title: "Mobile On-device Inference Optimization"
-excerpt: "Unity/C# 기반 모바일 환경 AI 추론 성능 분석 및 파이프라인 최적화<br/><img src='/images/notion4.png'>"
+title: "On-Device AI & Computer Vision"
+excerpt: "Built edge inference pipelines with YOLOv8 and OWL-ViT, identified NMS bottlenecks with Xcode Instruments, and optimized real-time deployment constraints.<br/><img src='/images/notion4.png'>"
 collection: portfolio
+category: ai
+tags:
+  - Computer Vision
+  - ONNX
+  - Unity
+  - YOLOv8
+  - OWL-ViT
+  - Edge AI
 ---
 
-**Period**: 2024.03 ~ 2024.12  
-**Role**: 성능 분석, 병목 진단, 최적화 방향 설계  
-**Tech Stack**: Unity, C#, Mobile Inference, Profiling, ONNX / YOLOv8  
+**Period**: 2023.09 - 2025.12  
+**Role**: On-device inference integration, profiling, pipeline troubleshooting, runtime optimization  
+**Tech Stack**: Unity, C#, ONNX, YOLOv8, OWL-ViT, Xcode Instruments, iPad / mobile runtime  
+**Code**: Private Repository - Available upon request
 
-## Overview
-모바일 환경에서 AI 추론 성능을 개선하기 위한 프로젝트를 수행했습니다. 단순히 모델 추론 속도만 비교하는 것이 아니라, 실제 실행 환경에서 전체 지연시간을 구성하는 요소를 분리해 병목 원인을 파악하는 데 집중했습니다.
+## Headline
+Integrated modern vision models into constrained runtime environments and turned profiling results into actionable system decisions, with a particular focus on **real-time edge inference reliability** rather than model-only benchmarks.
 
-## What I Did
-- Unity 기반 온디바이스 추론 파이프라인 구성
-- 추론 구간과 후처리 구간을 분리해 병목 원인 분석
-- 프로파일링을 통해 실제 성능 저하 요인 파악
-- 기능 변경보다 병목 제거를 우선한 개선 방향 설계
+## Problem
+In mobile and edge environments, the challenge is rarely just whether a model can infer. The real problem is whether the **entire pipeline** can sustain usable latency once preprocessing, postprocessing, memory limits, and engine integration overhead are included.
 
-## Key Results
-- 모델 정확도뿐 아니라 실제 구동 환경 기준의 성능 판단 경험 확보
-- 성능 저하 원인을 정량적으로 분리해 개선 방향 수립
+Across multiple projects, I worked on object detection and vision-driven interaction under these constraints:
 
-## Relevance
-정확한 계측을 바탕으로 병목 원인을 분리하고 개선 방향을 설계한 경험은 성능분석과 데이터 기반 판단이 중요한 직무에 활용할 수 있습니다.
+- Mobile object recognition in Unity
+- XR-center object recognition on iPad-class devices
+- Vision output linkage to downstream system behavior
 
-![프로파일링 비교 결과](/images/notion5.png)
-*프로파일링 비교 결과*
+## Solution
+I converted **YOLOv8** and **OWL-ViT** models to **ONNX** and integrated them into **Unity runtime pipelines** so they could be evaluated in the same environment where they would actually be used.
+
+- Structured the inference flow from input preprocessing to output parsing inside Unity.
+- Compared model choices not only by accuracy, but also by runtime cost under device constraints.
+- Used **Xcode Instruments** to isolate the postprocessing stage, especially **NMS (Non-Maximum Suppression)**, as a major bottleneck in the mobile deployment path.
+- Used those profiling results to guide practical optimization and deployment tradeoffs instead of overfitting to offline metrics.
+
+In a separate applied vision workflow, I also connected detection output to downstream logic by converting recognition results into coordinates that could drive interaction or system response. This experience was important because it moved the work from simple model inference to usable real-time system behavior.
+
+## Result
+- Established repeatable **on-device AI evaluation pipelines** inside Unity-based runtimes.
+- Identified and documented **NMS/postprocessing** as a major latency bottleneck on constrained devices.
+- Improved team decision-making by translating model complexity into system-level runtime impact.
+- Built practical experience in choosing deployment-ready tradeoffs for **real-time edge AI**, not just high-accuracy research models.
+
+## Why It Matters
+This work maps naturally to both target domains:
+
+- For **graphics / game engine** roles: integrating vision features into real-time engines and understanding frame-budget constraints.
+- For **industrial simulation / digital twin** roles: deploying perception modules on edge devices, diagnosing bottlenecks, and connecting model output to real operational pipelines.
+
+![On-device inference pipeline](/images/notion5.png)
+*Profiling and pipeline analysis for mobile on-device inference.*
