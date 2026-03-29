@@ -1,62 +1,73 @@
 ---
-title: "MPM Physics Simulation"
-excerpt: "Validation-oriented MPM simulator refinement and 13% kernel speedup through optimization, reproducibility work, and engine transfer planning.<br/><img src='/images/notion1.jpg'>"
+title: "MPM 기반 과립체 분리 시뮬레이션"
+excerpt: "MPM 시뮬레이터 구현, 수치 안정성 검증, 커널 최적화 13% 개선, 엔진 이식 경험을 정리한 프로젝트입니다.<br/><img src='/images/notion1.jpg'>"
 collection: portfolio
 category: physics
 tags:
   - MPM
   - CUDA
   - Taichi
-  - Numerical Analysis
-  - Real-time System
-  - Digital Twin
+  - 수치 해석
+  - 엔진 이식
+  - 성능 최적화
 ---
 
-**Period**: 2024.03 - Present  
-**Role**: Simulator design, GPU kernel implementation, numerical validation, performance profiling  
-**Tech Stack**: Taichi (CUDA Backend), Python, MPM, HLSL, Unreal Engine 5 Niagara  
-**Code**: Private Repository - Available upon request
+**기간**: 2024.03 - 현재  
+**역할**: 시뮬레이터 설계, GPU 커널 구현, 수치 검증, 성능 프로파일링  
+**기술 스택**: Taichi (CUDA Backend), Python, MPM, HLSL, Unreal Engine 5 Niagara  
+**코드**: 비공개 저장소, 요청 시 설명 가능
 
-## Headline
-Built and optimized an MPM-based real-time simulation pipeline for granular material behavior, improving repeated experiment efficiency and a major GPU kernel by **13%** while strengthening reproducibility and numerical stability.
+## 개요
 
-## Problem
-The project started as a physics simulation research task, but the engineering challenge was broader: build a simulator that could model complex particle behavior, remain numerically stable under difficult conditions, and be credible enough for repeated validation and future real-time engine integration.
+과립체 거동을 표현하는 MPM 기반 시뮬레이터를 구현하고, 수치 안정성과 재현성을 확보하면서 GPU 커널 최적화까지 함께 진행한 프로젝트입니다.
 
-This made the work relevant not only to graphics and game engines, but also to industrial simulation and digital twin environments where reliability, repeatability, and profiling discipline matter as much as raw speed.
+이 프로젝트의 핵심은 단순히 시뮬레이터를 만드는 것이 아니라, 복잡한 입자계가 불안정해지는 조건을 다루고 반복 가능한 검증 환경을 갖춘 뒤, 엔진 이식까지 고려한 구조로 확장한 점에 있습니다.
 
-## Solution
-I implemented the MPM simulator on top of **Taichi with the CUDA backend**, focusing on the high-cost data transfer stages between particles and grids.
+## 문제
 
-- Designed and implemented core **P2G/G2P** and stress-update kernels for GPU execution.
-- Reduced contention by minimizing unnecessary **atomic operations** in heavily accessed update paths.
-- Applied **kernel fusion** where launch overhead and memory traffic could be removed safely.
-- Reorganized **P2G/G2P memory access patterns** to better fit the GPU memory hierarchy and reduce avoidable stalls.
-- Established a reproducibility-oriented validation routine with kernel-level checks for unstable states.
+과립체와 같은 복잡한 동적 시스템은 단순 계산량만 큰 것이 아니라, 특정 조건에서 수치적으로 불안정해지기 쉽고 동일 조건에서도 결과 재현성이 흔들릴 수 있습니다.
 
-For the convergence improvement work, I framed the contribution as **physical model formulation and algorithm refinement** and used it to improve low-shear convergence behavior. I intentionally omit the detailed formulation here due to research confidentiality.
+따라서 이 프로젝트에서는 다음 두 가지를 함께 해결해야 했습니다.
 
-For stability, I applied a **Plastic Gate**-based control strategy to suppress numerical explosion and added routines to repeatedly verify that the same experimental condition produced physically plausible behavior.
+- 물리적으로 그럴듯한 거동을 유지하면서 수치적 발산을 제어할 것
+- 반복 실험과 후속 엔진 이식을 고려해 성능 병목을 줄일 것
 
-## Result
-- Improved repeated experiment efficiency through model and computation-flow refinement.
-- Improved a bottleneck GPU kernel by **13%** through atomic reduction, kernel fusion, and memory hierarchy optimization.
-- Improved the simulator's reliability by adding reproducibility and instability-detection routines rather than relying on manual parameter tuning.
-- Prepared the research output for broader reuse in real-time environments and ongoing engine-side transfer.
+## 수행 내용
 
-## Engine Transfer
-The simulator is also being translated into **UE5 Niagara HLSL Custom Modules**. This ongoing work focuses on restructuring the simulation flow so that particle growth, branching cost, and memory pressure can be profiled inside a real-time engine context.
+- **Taichi CUDA backend** 위에서 MPM 시뮬레이터를 구현했습니다.
+- 입자-격자 전송과 응력 갱신을 포함한 핵심 **P2G/G2P 커널**을 직접 설계했습니다.
+- 병목 구간을 프로파일링해 불필요한 **atomic 연산**을 줄였습니다.
+- launch overhead와 메모리 이동을 줄이기 위해 **kernel fusion**을 적용했습니다.
+- **P2G/G2P 메모리 접근 패턴**을 재정리해 GPU 메모리 계층에 더 맞는 흐름으로 개선했습니다.
+- 불안정 상태를 조기에 확인할 수 있도록 **재현성 중심 검증 루틴**을 구축했습니다.
 
-That transfer work matters because it turns a research simulator into a form closer to production graphics and interactive simulation systems.
+수렴 개선과 관련된 부분은 현재 후속 연구 정리 중이므로, 여기서는 **물리 모델 정식화 및 알고리즘 고도화** 수준까지만 공개합니다.
 
-## Why It Matters
-This project demonstrates a mix of capabilities that transfer across both target domains:
+안정성 측면에서는 **Plastic Gate 기반 제어 기법**을 적용해 수치적 폭발을 억제했고, 동일 조건에서 결과가 지나치게 흔들리지 않는지 반복적으로 검증했습니다.
 
-- For **graphics / game engine** roles: GPU-side simulation design, real-time constraints, and engine integration thinking.
-- For **industrial simulation / digital twin** roles: numerical analysis, repeatable validation, and performance optimization on large-scale dynamic systems.
+## 결과
 
-![Granular segregation simulation](/images/notion2.png)
-*Granular segregation behavior rendered from the MPM simulation pipeline.*
+- 물리 모델과 계산 흐름 고도화를 통해 **반복 실험 효율**을 개선했습니다.
+- 병목 GPU 커널을 **13% 개선**했습니다.
+- 수치적 불안정성과 재현성 문제를 검증 루틴 중심으로 관리할 수 있게 했습니다.
+- 연구용 구현을 엔진 환경으로 확장할 수 있는 형태로 정리했습니다.
 
-![Runtime comparison](/images/notion3.png)
-*Representative runtime comparison after model and kernel optimization.*
+## 엔진 이식
+
+현재 이 시뮬레이터는 **UE5 Niagara HLSL Custom Module** 기반으로 이식 중입니다.  
+이 과정에서는 단순 기능 옮기기보다, 엔진 내부에서 메모리 사용량과 분기 비용, 입자 증가에 따른 부하를 확인할 수 있는 구조로 바꾸는 데 초점을 두고 있습니다.
+
+## 의미
+
+이 프로젝트는 다음 역량을 함께 보여줍니다.
+
+- 물리 시뮬레이션 구현 능력
+- GPU 커널 병목 분석 및 최적화
+- 수치 안정성과 재현성 검증
+- 엔진 이식과 시스템 확장 가능성
+
+![과립체 분리 시뮬레이션 결과](/images/notion2.png)
+*MPM 기반 시뮬레이션 결과 시각화.*
+
+![최적화 비교](/images/notion3.png)
+*최적화 전후 비교 예시.*

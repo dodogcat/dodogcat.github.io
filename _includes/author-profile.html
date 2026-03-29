@@ -10,6 +10,12 @@
   {% assign display_name = "장윤석" %}
 {% endif %}
 
+{% if page.lang == 'ko' %}
+  {% assign profile_button_label = "연락처" %}
+{% else %}
+  {% assign profile_button_label = "Contact" %}
+{% endif %}
+
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
@@ -27,7 +33,7 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Contact</button>
+    <button class="btn btn--inverse">{{ profile_button_label }}</button>
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}

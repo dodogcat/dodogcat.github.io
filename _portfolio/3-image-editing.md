@@ -1,57 +1,61 @@
 ---
-title: "Software Engineering & VR Interaction"
-excerpt: "Designed VR interaction on Quest 2, led team delivery, and translated model outputs into system-level workflows across interactive software projects.<br/><img src='/images/notion6.png'>"
+title: "소프트웨어 개발 및 VR 상호작용"
+excerpt: "Quest 2 기반 VR 상호작용 개발, 팀 프로젝트 조율, 모듈 간 데이터 흐름 구조화를 중심으로 정리한 프로젝트입니다.<br/><img src='/images/notion6.png'>"
 collection: portfolio
 category: software
 tags:
   - VR
   - Quest2
   - Unity
-  - System Integration
-  - Backend Architecture
-  - Team Leadership
+  - 시스템 연동
+  - 팀 협업
+  - 상호작용
 ---
 
-**Period**: 2020.06 - 2025.12  
-**Role**: Technical planning, interaction design, system integration, team coordination  
-**Tech Stack**: Unity, C#, Meta Quest 2, Python, API integration, system pipeline design  
-**Code**: Private Repository - Available upon request
+**기간**: 2020.06 - 2025.12  
+**역할**: 기술 기획, 상호작용 설계, 시스템 연동, 팀 조율  
+**기술 스택**: Unity, C#, Meta Quest 2, Python, API 연동, 시스템 파이프라인 설계  
+**코드**: 비공개 저장소, 요청 시 설명 가능
 
-## Headline
-Led and delivered interactive software projects by organizing complex data and control flows into systems that teams could actually integrate, debug, and ship.
+## 개요
 
-## Problem
-Several of my non-research projects shared the same engineering difficulty: different modules worked in isolation, but the real challenge was turning them into a stable end-to-end product.
+이 프로젝트 묶음은 서로 다른 기능과 모듈을 실제로 연결 가능한 형태의 소프트웨어로 구조화하는 데 초점이 있습니다.
 
-That included:
+VR 상호작용 설계, AI 모듈 연동, 팀 프로젝트 조율 등 겉으로는 성격이 달라 보이지만, 실제로는 입력과 출력, 동작 시점, 리소스 사용량을 명확히 정의해 시스템 전체가 자연스럽게 동작하도록 만드는 경험이라는 공통점이 있습니다.
 
-- designing usable **VR interaction** on Quest 2,
-- connecting AI outputs to actual application behavior,
-- and translating technical constraints into terms that non-specialist teammates could use during integration.
+## 문제
 
-## Solution
-In the **Recycle Master** project, I took responsibility for **Quest 2 integration** and VR interaction design, covering input flow, object manipulation, and interaction UX in a real-time Unity environment.
+각 기능이 개별적으로 동작하는 것과, 여러 팀원이 만든 모듈이 한 제품 안에서 안정적으로 연결되는 것은 다른 문제입니다.
 
-In applied AI and systems projects, I also focused on making module boundaries explicit:
+이 프로젝트에서는 다음과 같은 어려움을 다뤘습니다.
 
-- defined input/output timing and data formats for components that had to be integrated into a main application,
-- reorganized explanations around system resource usage rather than model internals,
-- helped teams make practical technical decisions when an accurate module was too heavy for the surrounding application,
-- and structured execution steps so each contributor could work independently without losing overall coherence.
+- VR 환경에서 사용자가 자연스럽게 느끼는 상호작용을 어떻게 설계할 것인가
+- AI 모듈의 입력과 출력을 메인 애플리케이션과 어떻게 연결할 것인가
+- 팀원 간 구현 범위와 인터페이스를 어떻게 정리해야 충돌 없이 개발이 가능한가
 
-This style of work also appeared in team projects where I acted as a PM or technical coordinator, especially when the team needed a shared language for schedules, issue tracking, and demo-centered delivery.
+## 수행 내용
 
-## Result
-- Delivered VR interaction features on **Meta Quest 2** that were usable in a real-time application context.
-- Improved collaboration by reframing technical issues as **system integration metrics** such as timing, input/output contracts, and expected resource load.
-- Built repeatable experience in turning prototypes into integrated workflows rather than disconnected modules.
-- Strengthened my ability to lead technical decisions in mixed teams spanning AI, client runtime, and application logic.
+- **Recycle Master** 프로젝트에서 **Quest 2 연동**과 VR 상호작용 설계를 맡아 입력 흐름, 오브젝트 조작, 상호작용 UX를 구현했습니다.
+- AI 및 시스템 프로젝트에서는 입력 형식, 출력 시점, 데이터 흐름을 명확히 정의해 모듈 경계를 정리했습니다.
+- 모델 내부 구조보다 시스템 자원 사용량과 연동 조건을 중심으로 설명을 바꿔 팀 의사결정을 도왔습니다.
+- 기능 자체보다 전체 애플리케이션 흐름에 맞는 현실적인 타협점을 찾는 데 집중했습니다.
+- PM 또는 기술 조율 역할을 맡아 일정, 이슈, 데모 중심 산출물을 관리했습니다.
 
-## Why It Matters
-This project set shows engineering value that crosses industry boundaries:
+## 결과
 
-- For **graphics / game engine** roles: interaction design, runtime integration, and real-time application architecture.
-- For **industrial simulation / digital twin** roles: structuring multi-module systems, clarifying interfaces, and reducing integration risk in complex software environments.
+- **Meta Quest 2** 기반 VR 상호작용 기능을 실제 프로젝트 맥락에서 구현했습니다.
+- 기술 이슈를 **시스템 연동 관점**에서 정리해 협업 효율을 높였습니다.
+- 서로 다른 모듈을 하나의 흐름으로 묶는 구조화 경험을 쌓았습니다.
+- 혼합 팀에서 기술 의사결정과 구현 우선순위를 조율하는 역량을 키웠습니다.
 
-![Interactive pipeline concept](/images/notion7.png)
-*Representative interactive software workflow spanning runtime logic, external modules, and delivery coordination.*
+## 의미
+
+이 프로젝트는 다음 역량과 연결됩니다.
+
+- 상호작용 설계와 구현
+- 모듈 간 인터페이스 정의
+- 시스템 연동 중심 협업
+- 기능 구현을 제품 흐름으로 연결하는 구조화 능력
+
+![상호작용 및 시스템 연동 흐름](/images/notion7.png)
+*상호작용, 외부 모듈, 애플리케이션 흐름을 함께 고려한 개발 경험.*

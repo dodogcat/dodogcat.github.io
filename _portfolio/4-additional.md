@@ -1,44 +1,59 @@
 ---
-title: "Applied Simulation & System Integration"
-excerpt: "Connected CAD, external simulation outputs, and vision-driven coordinates into coherent 3D environments for validation-oriented workflows.<br/><img src='/images/notion8.png'>"
+title: "시뮬레이션 연동 및 시각화"
+excerpt: "CAD, 외부 시뮬레이터 결과, 객체 인식 좌표를 하나의 3차원 환경으로 연결한 프로젝트입니다.<br/><img src='/images/notion8.png'>"
 collection: portfolio
 category: simulation
 tags:
   - Unreal
   - CAD
   - FDS
-  - Coordinate Alignment
-  - Visualization
-  - System Validation
+  - 좌표 정합
+  - 시각화
+  - 시스템 검증
 ---
 
-**Period**: 2023.09 - 2025.12  
-**Role**: Spatial data integration, visualization pipeline setup, coordinate alignment  
-**Tech Stack**: Unreal Engine, CAD-based scene construction, external simulator linkage, computer vision output mapping  
-**Code**: Private Repository - Available upon request
+**기간**: 2023.09 - 2025.12  
+**역할**: 공간 데이터 연동, 시각화 파이프라인 구성, 좌표 정합  
+**기술 스택**: Unreal Engine, CAD 기반 공간 구성, 외부 시뮬레이터 연동, 객체 인식 결과 매핑  
+**코드**: 비공개 저장소, 요청 시 설명 가능
 
-## Headline
-Worked on simulation-adjacent system integration problems where the main challenge was not a single algorithm, but making heterogeneous data sources agree inside one interpretable 3D environment.
+## 개요
 
-## Problem
-Projects involving building-scale simulation and visualization often fail at the interface boundaries: coordinate systems do not match, external simulator outputs are hard to trust in context, and small alignment errors propagate into misleading results.
+서로 다른 형식의 데이터를 하나의 3차원 환경 안에서 일관되게 맞추는 데 초점을 둔 프로젝트입니다.
 
-## Solution
-I worked on workflows that connected:
+건물 구조, 외부 시뮬레이터 결과, 객체 인식 좌표처럼 출처와 표현 방식이 다른 데이터를 함께 다루다 보면, 개별 기술보다도 정합성과 연결 방식이 전체 결과의 신뢰도를 좌우하게 됩니다.
 
-- **CAD-based spatial layouts**
-- external simulation outputs such as **FDS**
-- and camera or object-recognition results that needed to be mapped into 3D coordinates
+## 문제
 
-The technical focus was on building a pipeline where these pieces could be checked together rather than treated as separate artifacts.
+시뮬레이션 및 시각화 프로젝트에서는 다음과 같은 경계면 문제가 자주 발생합니다.
 
-## Result
-- Built practical experience in handling **coordinate alignment** and external-tool integration issues.
-- Learned to treat visualization as a validation surface, not just a presentation layer.
-- Strengthened my ability to connect real-world structured data with simulation and rendering environments.
+- 좌표계가 서로 다르다
+- 외부 도구의 결과를 그대로 믿기 어렵다
+- 작은 정합 오차가 전체 결과 해석을 흔든다
 
-## Why It Matters
-This supporting project is especially relevant to **industrial simulation / digital twin** roles because it deals directly with spatial data consistency, simulator linkage, and explainable visualization. At the same time, it remains applicable to **graphics / engine** work because it uses real-time 3D environments as the integration layer.
+이 프로젝트는 바로 그 연결 구간을 정리하는 데 의미가 있었습니다.
 
-![Applied simulation integration](/images/notion8.png)
-*Applied simulation and visualization work focused on spatial consistency and external-system integration.*
+## 수행 내용
+
+- **CAD 기반 공간 구조**를 3차원 환경으로 정리했습니다.
+- **FDS**와 같은 외부 시뮬레이터 결과를 시각화 환경에 연결했습니다.
+- 카메라 또는 객체 인식 결과를 **3차원 좌표**로 매핑하는 과정을 다뤘습니다.
+- 각각의 결과를 따로 보는 것이 아니라, 하나의 환경 안에서 함께 검증할 수 있도록 파이프라인을 구성했습니다.
+
+## 결과
+
+- **좌표 정합**과 외부 도구 연동 문제를 실제로 다뤄본 경험을 쌓았습니다.
+- 시각화를 단순 결과 표현이 아니라 **검증 표면**으로 사용하는 관점을 얻었습니다.
+- 구조화된 데이터와 시뮬레이션 결과를 한 환경 안에 연결하는 역량을 키웠습니다.
+
+## 의미
+
+이 프로젝트는 다음 역량과 연결됩니다.
+
+- 시뮬레이션 결과 해석을 위한 시각화
+- 외부 도구와 엔진 간 데이터 연동
+- 공간 정보와 좌표계 정합
+- 시스템 전체 신뢰도를 고려한 구현 방식
+
+![시뮬레이션 연동 및 시각화](/images/notion8.png)
+*공간 정보, 외부 결과, 좌표 데이터를 함께 다룬 연동형 프로젝트.*

@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Yunseok Jang | Portfolio"
 title_separator          : "-"
 name                     : &name "Yunseok Jang"
-description              : &description "Physics-based Simulation, Real-time Systems, and Validation-oriented Engineering Portfolio"
+description              : &description "물리 기반 시뮬레이션, 엔진 연동, 성능 최적화 중심 포트폴리오"
 url                      : https://dodogcat.github.io
 baseurl                  : ""
 repository               : "dodogcat/dodogcat.github.io"
@@ -22,7 +22,7 @@ author:
   avatar           : "profile.png"
   name             : "Yunseok Jang"
   pronouns         :
-  bio              : "Physics-based Simulation / Real-time Systems / Validation"
+  bio              : "물리 기반 시뮬레이션 / 엔진 연동 / 성능 최적화"
   location         : "Seoul, South Korea"
   employer         :
   uri              :

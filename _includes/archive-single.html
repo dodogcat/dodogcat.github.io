@@ -12,6 +12,25 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% if page.lang == 'ko' %}
+  {% case post.category %}
+    {% when 'physics' %}
+      {% assign category_label = '물리 시뮬레이션' %}
+    {% when 'ai' %}
+      {% assign category_label = '인공지능 / 비전' %}
+    {% when 'software' %}
+      {% assign category_label = '소프트웨어 / 상호작용' %}
+    {% when 'simulation' %}
+      {% assign category_label = '시뮬레이션 연동' %}
+    {% else %}
+      {% assign category_label = post.category %}
+  {% endcase %}
+  {% assign detail_cta = '프로젝트 보기' %}
+{% else %}
+  {% assign category_label = post.category | upcase %}
+  {% assign detail_cta = 'View project details' %}
+{% endif %}
+
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -37,7 +56,7 @@
     {% if post.collection == 'portfolio' %}
       <p class="archive__item-taxonomy">
         {% if post.category %}
-          <span class="archive__item-badge">{{ post.category | upcase }}</span>
+          <span class="archive__item-badge">{{ category_label }}</span>
         {% endif %}
         {% for tag in post.tags limit:3 %}
           <span class="archive__item-tag">{{ tag }}</span>
@@ -64,7 +83,7 @@
     {% endif %}
 
     {% if post.collection == 'portfolio' %}
-      <p class="archive__item-cta"><a href="{{ base_path }}{{ post.url }}" rel="permalink">View project details</a></p>
+      <p class="archive__item-cta"><a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ detail_cta }}</a></p>
     {% endif %}
     
     {% if post.citation and post.paperurl and post.slidesurl %}

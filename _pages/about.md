@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About"
+title: "소개"
 lang: "ko"
 translation_url: "/en/"
 author_profile: true
@@ -9,43 +9,45 @@ redirect_from:
   - /about.html
 ---
 
-실시간 시뮬레이션, 수치 검증, 성능 프로파일링을 중심으로 작업하는 엔지니어입니다.  
-그래픽스와 게임 엔진 문맥에서는 물리 기반 시뮬레이션과 런타임 최적화에 강점이 있고, 산업 시뮬레이션과 디지털 트윈 문맥에서는 복잡한 동적 시스템을 구현하고 검증하며 신뢰 가능한 형태로 다듬는 일에 강점이 있습니다.
+물리 기반 시뮬레이션, 수치 검증, 성능 프로파일링을 중심으로 작업하는 엔지니어입니다.  
+그래픽스와 엔진 문맥에서는 물리 시뮬레이션 구현과 최적화에 강점이 있고, 보다 넓게는 복잡한 시스템을 구현하고 검증 가능한 형태로 다듬는 작업에 강점이 있습니다.
 
-### Focus
+### 중점 분야
 
-- **Physics-based Simulation**: MPM 기반 입자계 시뮬레이터 설계 및 GPU 커널 구현
-- **Performance & Reliability**: 병목 구간 분석, 수치 안정성 점검, 재현성 확보
-- **Real-time System Engineering**: Unity, Unreal Engine, on-device inference 환경 통합
-- **Industrial Simulation Readiness**: 검증 가능한 파이프라인, 좌표 정합, 외부 시스템 연동
+- **물리 기반 시뮬레이션**: MPM 기반 시뮬레이터 설계 및 GPU 커널 구현
+- **성능과 신뢰성**: 병목 구간 분석, 수치 안정성 점검, 재현성 확보
+- **엔진 및 시스템 통합**: Unity, Unreal Engine, 온디바이스 추론 파이프라인 연동
+- **검증 지향 개발**: 반복 실험, 좌표 정합, 외부 시스템 연동, 결과 검증
 
-### Selected Highlights
+### 주요 내용
 
-- **Validation Efficiency**: 물리 모델 및 계산 흐름 고도화를 통해 반복 실험 효율과 안정성 개선
-- **13% Kernel Speedup**: Atomic 감소, kernel fusion, memory hierarchy 최적화로 병목 커널 개선
-- **On-device AI Profiling**: YOLOv8, OWL-ViT 기반 추론 파이프라인에서 NMS 병목 구간 식별
-- **Engine Transfer**: UE5 Niagara HLSL Custom Module 기반 MPM 이식 진행
+- **반복 실험 효율 개선**: 물리 모델 및 계산 흐름 고도화를 통해 반복 실험 효율과 안정성 개선
+- **커널 최적화 13% 개선**: Atomic 감소, kernel fusion, memory hierarchy 최적화로 병목 커널 개선
+- **온디바이스 추론 분석**: YOLOv8, OWL-ViT 기반 추론 파이프라인에서 NMS 병목 구간 식별
+- **엔진 이식 경험**: UE5 Niagara HLSL Custom Module 기반 MPM 이식 진행
 
-### What I Work On
+### 작업 방식
 
-복잡한 현상을 코드로 옮기는 것만으로는 충분하지 않다고 생각합니다. 실무에서 중요한 것은 다음 세 가지입니다.
+복잡한 현상을 한 번 구현하는 것보다, 구현 이후에 얼마나 안정적으로 동작하는지와 어디서 병목이 생기는지를 설명할 수 있는지가 더 중요하다고 생각합니다.
 
-1. **모델이 실제로 안정적으로 동작하는가**
-2. **병목이 어디서 발생하는지 수치로 설명할 수 있는가**
-3. **다른 시스템과 연결했을 때도 여전히 믿고 사용할 수 있는가**
+그래서 다음 세 가지를 중요하게 봅니다.
 
-석사 과정에서는 MPM(Material Point Method) 기반 과립체 시뮬레이션을 연구하며, 물리 모델 구현과 수치 검증, 성능 프로파일링을 함께 다뤘습니다. 별도의 프로젝트에서는 Unity 기반 비전 파이프라인, Quest 2 상호작용, CAD/FDS 연동형 시각화 등 서로 다른 형태의 실시간 시스템을 구축하며 모델과 시스템 사이의 간극을 줄이는 경험을 쌓았습니다.
+1. **모델이 안정적으로 동작하는가**
+2. **병목이 어디서 발생하는지 측정으로 설명할 수 있는가**
+3. **다른 시스템과 연결했을 때도 신뢰할 수 있는가**
 
-### Target Roles
+석사 과정에서는 MPM 기반 과립체 시뮬레이션을 연구하며 물리 모델 구현, 수치 검증, 성능 프로파일링을 함께 다뤘습니다. 또한 Unity 기반 비전 파이프라인, Quest 2 상호작용, CAD/FDS 연동형 시각화 프로젝트를 통해 알고리즘과 시스템 사이의 간극을 줄이는 경험을 쌓았습니다.
 
-- Graphics / Game Engine Engineer
-- Industrial Simulation Engineer
-- Digital Twin / Validation Engineer
-- Real-time System / Technical R&D Engineer
+### 관심 분야
 
-### Links
+- 게임 엔진
+- 그래픽스 프로그래밍
+- 시뮬레이션 개발
+- 기술 연구개발
+
+### 링크
 
 - GitHub: [github.com/dodogcat](https://github.com/dodogcat)
-- Portfolio: [/portfolio/](/portfolio/)
-- CV: [/cv/](/cv/)
-- Email: `ttttwww10@naver.com`
+- 포트폴리오: [/portfolio/](/portfolio/)
+- 이력 요약: [/cv/](/cv/)
+- 이메일: `ttttwww10@naver.com`

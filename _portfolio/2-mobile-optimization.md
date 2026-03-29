@@ -1,55 +1,63 @@
 ---
-title: "On-Device AI & Computer Vision"
-excerpt: "Built edge inference pipelines with YOLOv8 and OWL-ViT, identified NMS bottlenecks with Xcode Instruments, and optimized real-time deployment constraints.<br/><img src='/images/notion4.png'>"
+title: "온디바이스 인공지능 및 컴퓨터 비전"
+excerpt: "YOLOv8, OWL-ViT를 ONNX로 변환해 Unity에 통합하고, Xcode Instruments로 NMS 병목을 분석한 프로젝트입니다.<br/><img src='/images/notion4.png'>"
 collection: portfolio
 category: ai
 tags:
-  - Computer Vision
+  - 컴퓨터 비전
   - ONNX
   - Unity
   - YOLOv8
   - OWL-ViT
-  - Edge AI
+  - 온디바이스 추론
 ---
 
-**Period**: 2023.09 - 2025.12  
-**Role**: On-device inference integration, profiling, pipeline troubleshooting, runtime optimization  
-**Tech Stack**: Unity, C#, ONNX, YOLOv8, OWL-ViT, Xcode Instruments, iPad / mobile runtime  
-**Code**: Private Repository - Available upon request
+**기간**: 2023.09 - 2025.12  
+**역할**: 온디바이스 추론 통합, 프로파일링, 파이프라인 분석, 최적화 방향 정리  
+**기술 스택**: Unity, C#, ONNX, YOLOv8, OWL-ViT, Xcode Instruments, iPad / 모바일 환경  
+**코드**: 비공개 저장소, 요청 시 설명 가능
 
-## Headline
-Integrated modern vision models into constrained runtime environments and turned profiling results into actionable system decisions, with a particular focus on **real-time edge inference reliability** rather than model-only benchmarks.
+## 개요
 
-## Problem
-In mobile and edge environments, the challenge is rarely just whether a model can infer. The real problem is whether the **entire pipeline** can sustain usable latency once preprocessing, postprocessing, memory limits, and engine integration overhead are included.
+비전 모델을 실제 구동 환경에 올렸을 때 어떤 병목이 생기는지 확인하고, 모델 선택과 배포 구조를 어떻게 가져가야 하는지 판단하기 위해 진행한 프로젝트입니다.
 
-Across multiple projects, I worked on object detection and vision-driven interaction under these constraints:
+중요했던 점은 단순히 모델 정확도를 비교하는 것이 아니라, 전처리, 후처리, 메모리 제약, 엔진 연동 비용까지 포함한 전체 파이프라인을 기준으로 성능을 판단하는 것이었습니다.
 
-- Mobile object recognition in Unity
-- XR-center object recognition on iPad-class devices
-- Vision output linkage to downstream system behavior
+## 문제
 
-## Solution
-I converted **YOLOv8** and **OWL-ViT** models to **ONNX** and integrated them into **Unity runtime pipelines** so they could be evaluated in the same environment where they would actually be used.
+모바일이나 태블릿 같은 제한된 환경에서는 모델 자체의 추론 속도보다 전체 파이프라인의 지연 시간이 더 큰 문제가 되는 경우가 많습니다.
 
-- Structured the inference flow from input preprocessing to output parsing inside Unity.
-- Compared model choices not only by accuracy, but also by runtime cost under device constraints.
-- Used **Xcode Instruments** to isolate the postprocessing stage, especially **NMS (Non-Maximum Suppression)**, as a major bottleneck in the mobile deployment path.
-- Used those profiling results to guide practical optimization and deployment tradeoffs instead of overfitting to offline metrics.
+이 프로젝트에서는 특히 다음과 같은 문제를 다뤘습니다.
 
-In a separate applied vision workflow, I also connected detection output to downstream logic by converting recognition results into coordinates that could drive interaction or system response. This experience was important because it moved the work from simple model inference to usable real-time system behavior.
+- Unity 내부에서 비전 모델을 실제로 어떻게 연결할 것인가
+- 정확도가 높은 모델이 실제 환경에서는 왜 무거워지는가
+- 병목이 모델 본체에 있는지, 후처리에 있는지, 시스템 연동에 있는지 어떻게 구분할 것인가
 
-## Result
-- Established repeatable **on-device AI evaluation pipelines** inside Unity-based runtimes.
-- Identified and documented **NMS/postprocessing** as a major latency bottleneck on constrained devices.
-- Improved team decision-making by translating model complexity into system-level runtime impact.
-- Built practical experience in choosing deployment-ready tradeoffs for **real-time edge AI**, not just high-accuracy research models.
+## 수행 내용
 
-## Why It Matters
-This work maps naturally to both target domains:
+- **YOLOv8**, **OWL-ViT** 모델을 **ONNX**로 변환해 Unity 환경에 통합했습니다.
+- 입력 전처리부터 출력 파싱까지 추론 파이프라인을 엔진 내부에서 정리했습니다.
+- 정확도뿐 아니라 실제 실행 비용을 기준으로 모델 선택을 비교했습니다.
+- **Xcode Instruments**를 사용해 후처리 단계, 특히 **NMS(Non-Maximum Suppression)**가 주요 병목이라는 점을 확인했습니다.
+- 오프라인 성능 수치가 아니라 실제 구동 환경에서의 지연 원인을 기준으로 최적화 방향을 정리했습니다.
 
-- For **graphics / game engine** roles: integrating vision features into real-time engines and understanding frame-budget constraints.
-- For **industrial simulation / digital twin** roles: deploying perception modules on edge devices, diagnosing bottlenecks, and connecting model output to real operational pipelines.
+또한 별도의 응용 프로젝트에서는 인식 결과를 좌표 정보로 변환해 상호작용이나 시스템 동작으로 연결하는 과정도 다뤘습니다. 이 경험은 단순 추론 결과를 실제 기능으로 연결하는 데 중요했습니다.
 
-![On-device inference pipeline](/images/notion5.png)
-*Profiling and pipeline analysis for mobile on-device inference.*
+## 결과
+
+- Unity 기반 **온디바이스 추론 파이프라인**을 반복 실험 가능한 형태로 구성했습니다.
+- **NMS / 후처리 병목**을 구체적으로 식별했습니다.
+- 모델 정확도와 배포 비용 사이의 현실적인 선택 기준을 정리했습니다.
+- 비전 모델을 단순 실험이 아니라 시스템 기능으로 연결하는 경험을 쌓았습니다.
+
+## 의미
+
+이 프로젝트는 다음 역량과 연결됩니다.
+
+- 제한된 환경에서의 추론 파이프라인 설계
+- 프로파일링 기반 병목 분석
+- 모델과 시스템 연동 사이의 트레이드오프 판단
+- 인식 결과를 실제 기능으로 연결하는 응용 능력
+
+![온디바이스 추론 파이프라인](/images/notion5.png)
+*모바일 환경 추론 파이프라인과 프로파일링 결과.*
