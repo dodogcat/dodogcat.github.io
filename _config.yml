@@ -75,11 +75,11 @@ author:
 # Publication Category
 publication_category:
   books:
-    title: "Books"
+    title: "기타"
   manuscripts:
-    title: "Journal Articles"
+    title: "학위논문"
   conferences:
-    title: "Conference Papers"
+    title: "포스터 발표"
 
 # Site Settings
 teaser                   :

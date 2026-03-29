@@ -1,11 +1,11 @@
 main:
-  - title: "Home"
+  - title: "소개"
     url: /
-  - title: "Portfolio"
+  - title: "포트폴리오"
     url: /portfolio/
-  - title: "Publications"
+  - title: "연구 및 발표"
     url: /publications/
-  - title: "CV"
+  - title: "이력 요약"
     url: /cv/
 
 main_en:
