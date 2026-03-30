@@ -5,7 +5,7 @@ collection: portfolio
 category: software
 tags:
   - VR
-  - Unreal Engine
+  - Unity
   - OpenXR
   - Meta Quest
   - 상호작용
@@ -13,7 +13,7 @@ tags:
 
 **기간**: 2023.03 - 2023.06  
 **역할**: VR 상호작용 구현, 입력 시스템 연동, OpenXR 호환 대응  
-**기술 스택**: Unreal Engine, OpenXR, Meta SDK  
+**기술 스택**: Unity, OpenXR, Meta SDK  
 **코드**: https://github.com/Shyplants/Recycling-for-foreigners?tab=readme-ov-file
 
 ![VR 리싸이클 마스터 실행 화면](/images/리싸이클.png)
@@ -25,7 +25,7 @@ VR 환경에서 분리수거를 연습할 수 있도록 만든 프로젝트입�
 
 ### 문제
 
-- Unreal 환경에서 VR 입력과 상호작용을 안정적으로 연결할 필요가 있었습니다.
+- Unity 환경에서 VR 입력과 상호작용을 안정적으로 연결할 필요가 있었습니다.
 - Meta SDK와 OpenXR 사이의 호환 이슈를 정리해야 했습니다.
 - 버튼 입력과 객체 조작을 자연스럽게 연결하는 상호작용 흐름이 필요했습니다.
 
