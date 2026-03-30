@@ -14,10 +14,12 @@ tags:
 **기간**: 2023.03 - 2023.06  
 **역할**: VR 상호작용 구현, 입력 시스템 연동, OpenXR 호환 대응  
 **기술 스택**: Unity, OpenXR, Meta SDK  
-**코드**: <a href="https://github.com/Shyplants/Recycling-for-foreigners?tab=readme-ov-file" target="_blank" rel="noopener"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+**코드**: <a href="https://github.com/Shyplants/Recycling-for-foreigners?tab=readme-ov-file" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
 
-![VR 리싸이클 마스터 실행 화면](/images/리싸이클.png)
-*VR 환경에서 분리수거 상호작용을 구현한 화면*
+<figure class="project-figure project-figure--compact">
+  <img src="/images/리싸이클.png" alt="VR 리싸이클 마스터 실행 화면">
+  <figcaption>VR 환경에서 분리수거 상호작용을 구현한 화면</figcaption>
+</figure>
 
 ### 개요
 
