@@ -10,25 +10,25 @@ lang: "ko"
 
 <div class="portfolio-landing">
   <p class="portfolio-landing__lead">
-    물리 기반 시뮬레이션, 엔진 연동, 성능 최적화, 검증 지향 개발을 중심으로 정리한 프로젝트들입니다.
-    단순 구현보다 병목 분석, 수치 안정성, 시스템 연결, 재현 가능한 결과를 더 중요하게 다뤘습니다.
+    물리 시뮬레이션, 인공지능 파이프라인, 상호작용 시스템, 데이터 연동 프로젝트를 중심으로 정리한 포트폴리오입니다.
+    구현 자체보다 병목 분석, 구조 설계, 검증 가능한 결과 정리에 초점을 두고 작업했습니다.
   </p>
 
   <div class="portfolio-highlight-grid">
     <div class="portfolio-highlight-card">
-      <span class="portfolio-highlight-card__label">검증 효율</span>
-      <strong>반복 실험 효율 개선</strong>
-      <p>물리 모델과 계산 흐름을 고도화해 반복 실험과 검증 과정의 효율을 높였습니다.</p>
+      <span class="portfolio-highlight-card__label">성능 분석</span>
+      <strong>병목 구간을 실제로 분리하고 개선</strong>
+      <p>커널 실행 시간, 추론 파이프라인, 데이터 흐름을 계측하고 병목 원인을 구체적으로 확인했습니다.</p>
     </div>
     <div class="portfolio-highlight-card">
-      <span class="portfolio-highlight-card__label">커널 최적화</span>
-      <strong>13% 성능 개선</strong>
-      <p>Atomic 감소, kernel fusion, memory hierarchy 최적화로 병목 커널을 개선했습니다.</p>
+      <span class="portfolio-highlight-card__label">구조 설계</span>
+      <strong>연결 가능한 시스템으로 정리</strong>
+      <p>모델, 엔진, 시뮬레이션 결과, 사용자 입력이 실제로 이어지도록 인터페이스와 흐름을 설계했습니다.</p>
     </div>
     <div class="portfolio-highlight-card">
-      <span class="portfolio-highlight-card__label">시스템 연동</span>
-      <strong>엔진과 추론 파이프라인</strong>
-      <p>엔진 이식, 온디바이스 추론, 좌표 변환과 같은 시스템 연결 문제를 다뤘습니다.</p>
+      <span class="portfolio-highlight-card__label">검증과 결과</span>
+      <strong>수치와 동작으로 설명 가능한 결과</strong>
+      <p>반복 실험, 프로파일링, 프로토타입 제출을 통해 결과를 확인 가능한 형태로 남겼습니다.</p>
     </div>
   </div>
 
@@ -39,21 +39,21 @@ lang: "ko"
     {% endif %}
   {% endfor %}
 
-  <h2>인공지능 및 컴퓨터 비전</h2>
+  <h2>인공지능 / 비전</h2>
   {% for post in site.portfolio %}
     {% if post.category == "ai" %}
       {% include archive-single.html %}
     {% endif %}
   {% endfor %}
 
-  <h2>소프트웨어 및 상호작용</h2>
+  <h2>소프트웨어 / 상호작용</h2>
   {% for post in site.portfolio %}
     {% if post.category == "software" %}
       {% include archive-single.html %}
     {% endif %}
   {% endfor %}
 
-  <h2>시뮬레이션 연동 및 시각화</h2>
+  <h2>시뮬레이션</h2>
   {% for post in site.portfolio %}
     {% if post.category == "simulation" %}
       {% include archive-single.html %}
