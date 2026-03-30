@@ -13,7 +13,7 @@ tags:
 
 **기간**: 2024.09 - 2024.12  
 **역할**: 온디바이스 추론 통합, 성능 계측, 병목 분석  
-**기술 스택**: Unity, C#, ONNX, Barracuda, YOLOv3-tiny, YOLOv8, Xcode Instruments, iPad / 모바일 환경  
+**기술 스택**: Unity, C#, ONNX, Barracuda, YOLOv3-tiny, YOLOv8, Xcode 프로파일링, iPad / 모바일 환경  
 **코드**: 비공개 저장소, 요청 시 설명 가능
 
 ![불 인식 실행 화면](/images/불인식.png)

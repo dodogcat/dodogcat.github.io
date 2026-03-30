@@ -26,7 +26,7 @@ redirect_from:
 - **시뮬레이션 / 수치 해석**: MPM, 과립체 시뮬레이션, 검증, 재현성
 - **GPU / 최적화**: Taichi, CUDA backend, 커널 프로파일링, 메모리 계층 분석
 - **엔진 / 상호작용 시스템**: Unity, Unreal Engine 5, Niagara, HLSL, Quest 2
-- **인공지능 / 비전**: ONNX, YOLOv8, OWL-ViT, 온디바이스 추론, Xcode Instruments
+- **인공지능 / 비전**: ONNX, YOLOv8, OWL-ViT, 온디바이스 추론, Xcode 프로파일링
 - **프로그래밍**: Python, C++, C#
 
 ## 프로젝트
