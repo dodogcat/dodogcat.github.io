@@ -1,6 +1,6 @@
 ---
 title: "MPM 기반 과립체 분리 시뮬레이션"
-excerpt: "MPM 시뮬레이터 구현, 수치 안정성 검증, 시각화 파이프라인을 정리한 프로젝트입니다.<br/><img src='/images/notion1.jpg'>"
+excerpt: "MPM 시뮬레이터 구현, 수치 안정성 검증, 시각화 파이프라인을 정리한 프로젝트입니다.<br/><img src='/images/notion2.png'>"
 collection: portfolio
 category: physics
 tags:
