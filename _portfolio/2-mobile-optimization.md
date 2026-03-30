@@ -1,6 +1,6 @@
 ---
 title: "모바일 객체 인식 파이프라인 분석"
-excerpt: "Unity 기반 모바일 환경에서 객체 인식 파이프라인의 병목을 분석하고, 모델 전환 가능성을 검토한 프로젝트입니다.<br/><img src='/images/notion4.png'>"
+excerpt: "Unity 기반 모바일 환경에서 객체 인식 파이프라인의 병목을 분석하고, 모델 전환 가능성을 검토한 프로젝트입니다.<br/><img src='/images/불인식.png'>"
 collection: portfolio
 category: ai
 tags:
@@ -16,8 +16,8 @@ tags:
 **기술 스택**: Unity, C#, ONNX, Barracuda, YOLOv3-tiny, YOLOv8, Xcode Instruments, iPad / 모바일 환경  
 **코드**: 비공개 저장소, 요청 시 설명 가능
 
-![모바일 객체 인식 화면](/images/notion4.png)
-*Unity 기반 모바일 객체 인식 실행 화면*
+![불 인식 실행 화면](/images/불인식.png)
+*모바일 환경에서 불 인식 기능을 실행한 화면*
 
 ### 요약
 
@@ -31,9 +31,12 @@ Unity 기반 모바일 환경에서 객체 인식 기능을 개선하기 위해 
 - 기존 구조에서는 원하는 수준의 인식 품질을 확보하기 어려웠습니다.
 - YOLOv8n 적용을 검토하는 과정에서 화면 끊김이 발생했고, 원인이 모델 크기인지 파이프라인 구조인지 분리해서 확인할 필요가 있었습니다.
 
+![모델 구조 검토 이미지](/images/아키텍처.png)
+*모델 전환 가능성 검토 과정에서 비교한 구조 예시*
+
 ### 결과
 
-![모바일 환경 추론 파이프라인](/images/notion5.png)
+![단계별 시간 측정 결과](/images/notion5.png)
 *입력 크기와 모델 구성에 따른 단계별 시간 측정 결과*
 
 - YOLOv8n, YOLOv8s, YOLOv8m 비교 결과, 총 추론 시간은 **67ms, 88ms, 147ms**였지만 평균 프레임은 **40, 38, 38 FPS**로 큰 차이가 없었습니다.
