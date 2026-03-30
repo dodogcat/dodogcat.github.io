@@ -6,14 +6,14 @@ category: software
 tags:
   - VR
   - Unity
-  - OpenXR
   - Meta Quest
+  - Meta SDK
   - 상호작용
 ---
 
 **기간**: 2023.03 - 2023.06  
-**역할**: VR 상호작용 구현, 입력 시스템 연동, OpenXR 호환 대응  
-**기술 스택**: Unity, OpenXR, Meta SDK  
+**역할**: VR 상호작용 구현, 입력 시스템 연동, SDK 호환 대응  
+**기술 스택**: Unity, Meta SDK  
 **코드**: <a href="https://github.com/Shyplants/Recycling-for-foreigners?tab=readme-ov-file" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
 
 <figure class="project-figure project-figure--compact">
@@ -28,12 +28,12 @@ VR 환경에서 분리수거를 연습할 수 있도록 만든 프로젝트입�
 ### 문제
 
 - Unity 환경에서 VR 입력과 상호작용을 안정적으로 연결할 필요가 있었습니다.
-- Meta SDK와 OpenXR 사이의 호환 이슈를 정리해야 했습니다.
+- SDK 적용 과정에서 입력 및 호환 이슈를 정리해야 했습니다.
 - 버튼 입력과 객체 조작을 자연스럽게 연결하는 상호작용 흐름이 필요했습니다.
 
 ### 수행 내용
 
-- Meta SDK 기반 기능과 OpenXR 환경을 함께 검토하며 호환 문제를 확인했습니다.
+- Meta SDK 기반 기능을 적용하며 입력과 동작 흐름을 점검했습니다.
 - 버튼 입력을 받아 상호작용으로 연결하는 스크립트를 작성했습니다.
 - VR 환경에서 사용자가 분리수거 대상을 집고 놓는 흐름을 구현했습니다.
 
